@@ -1,0 +1,75 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#D1D9E0', 
+  },
+  mapBackgroundPlaceholder: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  mapText: {
+    color: '#8A9BA8',
+    fontSize: 18,
+    fontWeight: 'bold',
+    letterSpacing: 2,
+  },
+  rightColumn: {
+    position: 'absolute',
+    right: 16,
+    top: '40%', // Centraliza verticalmente
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    paddingVertical: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 6,
+    elevation: 5,
+  },
+  iconButton: {
+    width: 48,
+    height: 48,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#F0F0F0',
+  },
+  iconText: {
+    fontSize: 20,
+    color: '#333333',
+  },
+  bottomBar: {
+    position: 'absolute',
+    bottom: 30,
+    left: 16,
+    right: 16,
+    backgroundColor: '#FFFFFF',
+    height: 56,
+    borderRadius: 28,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 6,
+  },
+  searchInput: {
+    flex: 1,
+    fontSize: 16,
+    color: '#1A1A1A',
+  },
+  bottomIconGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  bottomIcon: {
+    fontSize: 22,
+    color: '#1A1A1A',
+    marginLeft: 16,
+  },
+});
