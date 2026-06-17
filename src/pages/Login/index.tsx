@@ -26,7 +26,6 @@ export default function Login({ navigation }: any) {
           Sign Up to kpler-prod to continue to <Text style={styles.boldText}>[Mobile] MarineTraffic App</Text>.
         </Text>
 
-        {/* Bônus: LinkedIn */}
         <TouchableOpacity style={styles.socialButton} activeOpacity={0.7} onPress={handleNavigate}>
           <View style={styles.socialIconContainer}>
             <Text style={[styles.socialIconText, styles.linkedinText]}>in</Text>

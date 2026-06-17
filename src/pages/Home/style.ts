@@ -6,9 +6,10 @@ export const styles = StyleSheet.create({
     backgroundColor: '#D1D9E0', 
   },
   mapBackgroundPlaceholder: {
-    ...StyleSheet.absoluteFillObject,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    position: 'relative', 
   },
   mapText: {
     color: '#8A9BA8',
@@ -19,7 +20,7 @@ export const styles = StyleSheet.create({
   rightColumn: {
     position: 'absolute',
     right: 16,
-    top: '40%', // Centraliza verticalmente
+    top: '40%', 
     backgroundColor: '#FFFFFF',
     borderRadius: 12,
     paddingVertical: 8,
