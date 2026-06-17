@@ -68,7 +68,6 @@ The application focus is on using native layout systems (`StyleSheet`), handling
 - React Navigation (Native Stack)
 - Expo Vector Icons (Feather, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons)
 - TypeScript
-- JavaScript ES6+
 
 ---
 
@@ -186,7 +185,6 @@ O projeto foca no uso correto de folhas de estilo nativas (`StyleSheet`), fluxo 
 - React Navigation (Native Stack)
 - Expo Vector Icons (Feather, FontAwesome5, Ionicons, MaterialCommunityIcons, MaterialIcons)
 - TypeScript
-- JavaScript ES6+
 
 ---
 
