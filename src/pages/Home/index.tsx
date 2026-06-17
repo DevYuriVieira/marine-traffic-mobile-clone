@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, TextInput, TouchableOpacity, StatusBar, ImageBackground } from 'react-native';
-import { Ionicons, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome5, MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 import { styles } from './style';
 
 export default function Home({ navigation }: any) {
@@ -19,19 +19,36 @@ export default function Home({ navigation }: any) {
         resizeMode="cover"
       >
         
-        <View style={styles.rightColumn}>
-          <TouchableOpacity style={styles.iconButton} activeOpacity={0.7}>
-            <Ionicons name="menu" size={24} color="#333333" />
+        <View style={styles.rightControlsWrapper}>
+          
+          <TouchableOpacity style={styles.singleButton} activeOpacity={0.7}>
+            <MaterialCommunityIcons name="weather-windy" size={24} color="#333333" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.iconButton} activeOpacity={0.7}>
-            <Ionicons name="heart-outline" size={24} color="#333333" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.iconButton} activeOpacity={0.7}>
-            <Ionicons name="filter" size={22} color="#333333" />
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.iconButton, { borderBottomWidth: 0 }]} activeOpacity={0.7}>
-            <MaterialIcons name="my-location" size={22} color="#333333" />
-          </TouchableOpacity>
+          
+          <View style={styles.buttonGroup}>
+            <TouchableOpacity style={styles.iconButton} activeOpacity={0.7}>
+              <Ionicons name="heart-outline" size={24} color="#333333" />
+            </TouchableOpacity>
+            
+            <TouchableOpacity style={styles.iconButton} activeOpacity={0.7}>
+              <View style={styles.customIconContainer}>
+                <MaterialCommunityIcons name="filter-outline" size={22} color="#333333" />
+                <View style={styles.funnelLinesWrapper}>
+                  <View style={styles.funnelLine} />
+                  <View style={styles.funnelLine} />
+                  <View style={styles.funnelLine} />
+                </View>
+              </View>
+            </TouchableOpacity>
+            
+            <TouchableOpacity style={[styles.iconButton, { borderBottomWidth: 0 }]} activeOpacity={0.7}>
+              <View style={styles.gpsContainer}>
+                <MaterialIcons name="gps-not-fixed" size={22} color="#333333" />
+                <View style={styles.gpsInnerCircle} />
+              </View>
+            </TouchableOpacity>
+          </View>
+
         </View>
 
         <View style={styles.bottomBar}>
@@ -42,7 +59,7 @@ export default function Home({ navigation }: any) {
           />
           
           <View style={styles.bottomIconGroup}>
-            <TouchableOpacity activeOpacity={0.7} style={{ marginRight: 16 }}>
+            <TouchableOpacity activeOpacity={0.7} style={styles.binocularsButton}>
               <FontAwesome5 name="binoculars" size={20} color="#1A1A1A" />
             </TouchableOpacity>
             
