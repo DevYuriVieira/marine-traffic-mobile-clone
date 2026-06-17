@@ -55,16 +55,20 @@ export default function Home({ navigation }: any) {
           <TextInput 
             style={styles.searchInput}
             placeholder="Search MarineTraffic..."
-            placeholderTextColor="#757575"
+            placeholderTextColor="#AAAAAA"
           />
           
           <View style={styles.bottomIconGroup}>
-            <TouchableOpacity activeOpacity={0.7} style={styles.binocularsButton}>
-              <FontAwesome5 name="binoculars" size={20} color="#1A1A1A" />
+            <TouchableOpacity activeOpacity={0.7} style={styles.tuneButton}>
+              <MaterialCommunityIcons name="binoculars" size={22} color="#666" />
             </TouchableOpacity>
-            
-            <TouchableOpacity activeOpacity={0.7} onPress={handleGoToLogin}>
-              <Ionicons name="person" size={22} color="#1966CC" /> 
+
+            <TouchableOpacity
+              activeOpacity={0.7}
+              onPress={handleGoToLogin}
+              style={styles.personButton}
+            >
+              <Ionicons name="person" size={16} color="#333" />
             </TouchableOpacity>
           </View>
         </View>
